@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAN'S PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2920de704c.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url(img/duck_feet-removebg.png);
+             background-size: contain;">
+             <a class="return-button" href="../index.html#portfolio">RETURN</a>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <li><a href="#projects">Hobbies</a></li>
+                
+                <li><a href="#contact">Contact</a></li>
+                
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" style="text-align: start;
+        justify-content: start;
+        align-items: start;">
+            <h1 style="margin-left: -3px;">Hi, I'm John Ian <span>Ormides</span><br></h1>
+            <p> BSIT - 1A Student<br><span style="color: orange;"> I am an aspiring Web Developer</span> </p>            
+        </div>
+    </div>
+</div>
+<!-- -------------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/ian_img/img1.jpg" alt="ian">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span style="color: orange;">Me </span></h1>
+                <p>I am an aspiring web developer, with a focus on technical skills such as Front-End Development, Understanding  of Responsive Design, and Familiarity with Frameworks. Passionate about creating user-friendly and innovative web experiences. I'm eager to learn the latest technologies and dive into the world of code to bring ideas to life. The ever-evolving web excites me, and I can't wait to contribute my skills and creativity to its future!                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>Oriented in Using:</li>
+                       <li>Computer</li>
+                        <li>Networking basics</li>
+                        <li>C Programming Language</li>
+                        <li>Java Programming Language</li>
+                        <li>HTML and CSS</li>
+
+                        <!-- <li>Youtuber</span><br>Video Creator</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-Present</span><br>Gordon College: College of Computer Studies</br>B.S in Information Technology</li>
+                        <li><span>2021-2023</span><br>Columban College - SHS</br>Information and Communication Technology</li>
+                        <li><span>2017-2021</span><br>
+                        Columban College - JHS</br></li>
+                        <li><span>2011-2017</span><br>
+                            Columban College - Elementary</br></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------Portfolio------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/ian_img/img2.jpg"> 
+                <div class="layer">
+                    <h3> Photography</h3>
+                    <p>Capturing interesting photos of a specific time.</p>                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/ian_img/img3.jpg">
+                <div class="layer">
+                    <h3>Cooking</h3>
+                    <p>Cook to satisfy one’s cravings.</p>                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/ian_img/img4.png">
+                <div class="layer">
+                    <h3>Playing music</h3>
+                    <p>Expressing myself through instruments or singing.</p>
+                </div>
+            </div>
+        </div> <!-- Close .work-list -->
+    </div> <!-- Close .container -->
+</div> <!-- Close #projects -->
+
+<!--Photo Gallery-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <h1>My Images</h1>
+        <img src="img/ian_img/SS1.jpg" alt="slideshow" id="slideshow" width="450px" height="600px">
+  </div>
+
+  <br>
+    
+  <script>
+    var slideshow = ['img/ian_img/SS1.JPG', 'img/ian_img/SS2.jpg', 'img/ian_img/SS3.jpg', 'img/ian_img/SS4.jpg'];
+    var currentIndex = 0;    
+    function slideShow() {
+      document.getElementById('slideshow').src = slideshow[currentIndex]; 
+      currentIndex = (currentIndex + 1 ) % slideshow.length;
+    }
+    setInterval(slideShow, 2000); 
+</script>
+<!-- ---------Contact------ -->
+<div id="contact">
+    <div class="container" style="margin-left: 175px;">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> sjohnianormides@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+63 930 - 4433 - 316</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/jjohneeann/"><i class="fa-brands fa-instagram"></i>jjohneeann</p></a>
+                    </div>                                
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="type" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-Mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <!-- <span id="msg">Hello</span> -->
+            </div>
+            <div class="copyright">
+                <p>Copyright<i class="fa-regular fa-registered"></i> @jjohneeann </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------JAva script------------------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    
+</body>
+</html>
+</html>

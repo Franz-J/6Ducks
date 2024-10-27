@@ -1,0 +1,180 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTINM'S PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2920de704c.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url(img/duck_feet-removebg.png);
+             background-size: contain;">
+             <a class="return-button" href="../index.html#portfolio">RETURN</a>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <li><a href="#projects">Hobbies</a></li>
+                
+                <li><a href="#contact">Contact</a></li>
+                
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" style="text-align: start;
+        justify-content: start;
+        align-items: start;">
+            <h1 style="margin-left: -3px;">Hi, I'm Justin <span>Monsalud</span><br></h1>
+            <p> BSIT - 1A Student<br><span style="color: orange;"> I am an aspiring Businessman</span> </p>            
+        </div>
+    </div>
+</div>
+<!-- -------------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/justinM_img/img1.png" alt="jstm">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span style="color: orange;">Me </span></h1>
+                <p>To create a mindset of continuous growth and learning, striving to become the best version of myself while positively impacting those around me.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>Learning new things</li>
+                       <li>Time Management</li>
+                        <li>Problem Solving</li>
+                        <li>Handling stree</li>
+                        <li>Socializing</li>
+
+
+                        <!-- <li>Youtuber</span><br>Video Creator</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Wwb development</span><br>In Html Css Javascript</li>
+                        <li><span>Ardiuno</span><br>maked many projects</li>
+                        <li><span>Esp8266/32</span><br>maked many projects</li>
+                    </ul> 
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-Present</span><br>Gordon College: College of Computer Studies</br>B.S in Information Technology</li>
+                        <li><span>2019-2021</span><br>Santa Cruz Academy - SHS</br>Accountancy and Business Management</li>
+                        <li><span>2015-2019</span><br>
+                            Santa Cruz Academy - JHS</br></li>
+                        <li><span>2009-2015</span><br>
+                            Children of Zion Montessori School Inc. - Elementary</br></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------Portfolio------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/justinM_img/img2.png"> 
+                <div class="layer">
+                    <h3> Watching Esports Event </h3>
+                    <p>I always watch pro scene so I can learn from them.</p>                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/justinM_img/img3.png">
+                <div class="layer">
+                    <h3>Jogging</h3>
+                    <p>I love Jogging because it makes my whole day productive.</p>                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/justinM_img/img4.jpg">
+                <div class="layer">
+                    <h3>Going to Gym</h3>
+                    <p>I love going to the gym for my mental and physical health.</p>
+                </div>
+            </div>
+        </div> <!-- Close .work-list -->
+    </div> <!-- Close .container -->
+</div> <!-- Close #projects -->
+
+<!--Photo Gallery-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <h1>My Images</h1>
+        <img src="img/justinM_img/ss1.png" alt="slideshow" id="slideshow" width="450px" height="600px">
+  </div>
+
+  <br>
+    
+  <script>
+    var slideshow = ['img/justinM_img/ss1.png', 'img/justinM_img/ss2.png', 'img/justinM_img/ss3.png', 'img/justinM_img/ss4.png'];
+    var currentIndex = 0;    
+    function slideShow() {
+      document.getElementById('slideshow').src = slideshow[currentIndex]; 
+      currentIndex = (currentIndex + 1 ) % slideshow.length;
+    }
+    setInterval(slideShow, 2000); 
+</script>
+<!-- ---------Contact------ -->
+<div id="contact">
+    <div class="container" style="margin-left: 175px;">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> 202110204@gordoncollege.edu.ph
+                </p>
+                <p><i class="fa-solid fa-square-phone"></i>+63 905 - 3256 - 350</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/me.Heero"><i class="fa-brands fa-facebook"></i>Justin Monsalud</p></a>
+                    </div>                                
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="type" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-Mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <!-- <span id="msg">Hello</span> -->
+            </div>
+            <div class="copyright">
+                <p>Copyright<i class="fa-regular fa-registered"></i> @Heero </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------JAva script------------------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    
+</body>
+</html>
+</html>
